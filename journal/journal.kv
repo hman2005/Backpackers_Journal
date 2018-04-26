@@ -1,7 +1,31 @@
 #: kivy 1.0.9
 
+<MarkerSelect>:
+    orientation: 'vertical'
+    size: (50,150)
+    BubbleButton:
+        text:'1'
+    BubbleButton:
+        text:'2'
+    BubbleButton:
+        text:'3'
+    BubbleButton:
+        text:'4'
+    BubbleButton:
+        text:'5'
+    BubbleButton:
+        text:'6'
+    BubbleButton:
+        text:'7'
+
 <Map>:
+    do_rotation: False
+    scale_min: 1
+    scale_max: 5
     image_path: ''
 
     Image:
+        size: root.size
         source: root.image_path
+
+    MarkerSelect:
